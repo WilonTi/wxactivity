@@ -1,7 +1,7 @@
 //微信标题 图片
-var imgUrl = 'https://github.com/WilonTi/wxactivity/blob/master/img/word.jpg'; 
+var imgUrl = 'https://github.com/WilonTi/wxactivity/tree/master/img/word.jpg'; 
 var lineLink = 'https://wilonti.github.io/wxactivity/'; 
-var descContent = "3.8M"; 
+var descContent = "3.8MB"; 
 var shareTitle = '技能考前，85道押题发布！高概率原理，套用得分！'; 
 var appid = ''; 
 
