@@ -3,8 +3,8 @@ var imgUrl = 'https://github.com/WilonTi/wxactivity/blob/master/img/word.jpg';
 var lineLink = 'https://wilonti.github.io/wxactivity/'; 
 var descContent = "3.8M"; 
 var shareTitle = '技能考前，85道押题发布！高概率原理，套用得分！'; 
-var appid = 'wxc9937e3a66af6dc8'; 
- 
+var appid = ''; 
+
 function shareFriend() { 
 WeixinJSBridge.invoke('sendAppMessage',{ 
 "appid": appid, 
@@ -15,7 +15,7 @@ WeixinJSBridge.invoke('sendAppMessage',{
 "desc": descContent, 
 "title": shareTitle 
 }, function(res) { 
-_report('send_msg', res.err_msg); 
+//_report('send_msg', res.err_msg); 
 }) 
 } 
 function shareTimeline() { 
@@ -27,7 +27,7 @@ WeixinJSBridge.invoke('shareTimeline',{
 "desc": descContent, 
 "title": shareTitle 
 }, function(res) { 
-_report('timeline', res.err_msg); 
+//_report('timeline', res.err_msg); 
 }); 
 } 
 function shareWeibo() { 
@@ -35,7 +35,7 @@ WeixinJSBridge.invoke('shareWeibo',{
 "content": descContent, 
 "url": lineLink, 
 }, function(res) { 
-_report('weibo', res.err_msg); 
+//_report('weibo', res.err_msg); 
 }); 
 } 
 // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。 
